@@ -1,0 +1,29 @@
+# Terraform Datasources
+  Data sources allow Terraform to use information defined outside of Terraform, defined by another separate Terraform configuration, or modified by functions.
+
+## Section-7.1: Terraform Data sources Overview
+
+## Section-7.2: Terraform Data sources Syntax
+   A data source is accessed via a special kind of resource known as a data resource, declared using a data block:
+
+   `data "data_source_type" "data_source_label" {`
+        `most_recent = true`
+        `owners = ["self"]`
+        `tags = {`
+            `Name   = "app-server"`
+            `Tested = "true"`
+        `}`
+    `}`
+
+## Section-7.3: Examples
+   Some of the Terraform AWS Data sources are as below:
+   
+   1. aws_ami
+   2. aws_vpc
+   3. aws_vpn_connection
+   4. aws_vpn_gateway
+   5. aws_arn
+   6. aws_region
+   7. aws_availability_zones
+
+   For getting more details about supported Terraform Data Sources, [click here >>](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/regions)
